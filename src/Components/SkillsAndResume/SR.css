@@ -1,0 +1,79 @@
+.sr {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  gap: 5rem;
+  overflow: hidden;
+}
+.sr .left .skills {
+  display: flex;
+  position: relative;
+  gap: 3rem;
+
+  flex-wrap: wrap;
+  max-width: 950px;
+
+  margin: 0 auto;
+}
+
+.sr .left .skills li {
+  font-size: 1.4rem;
+}
+
+.sr .left svg:not(.sr .left .skills li svg),
+.sr .right svg {
+  position: absolute;
+  transform: scale(15);
+  z-index: -1;
+  color: #d9d9d9 !important;
+  bottom: 4rem;
+}
+
+.sr .right svg {
+  right: 9rem;
+}
+.sr .left svg:not(.sr .left .skills li svg) {
+  left: 8rem;
+}
+.sr .left .skills li {
+  position: relative;
+  width: 200px;
+  height: 200px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1rem;
+  border-radius: 50%;
+}
+.sr .right {
+  height: 50vh;
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  align-items: center;
+  padding-top: 4rem;
+  text-align: center;
+  position: relative;
+}
+.sr .left {
+  position: relative;
+}
+.sr .right h3 {
+  font-size: 2.5rem;
+}
+
+.sr .right a {
+  cursor: pointer;
+}
+.sr .right .btn:hover {
+  color: #bca89a;
+  background-color: var(--dark-brown);
+  border: 1px solid #bca89a;
+}
+
+@media (max-width: 768px) {
+  .sr .left svg:not(.sr .left .skills li svg),
+  .sr .right svg {
+    display: none;
+  }
+}

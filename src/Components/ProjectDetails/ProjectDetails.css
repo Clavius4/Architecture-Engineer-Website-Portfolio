@@ -1,0 +1,255 @@
+.projectData .pad {
+  padding: 0 5rem;
+}
+.projectData .space {
+  margin-bottom: 5rem;
+}
+.projectData img {
+  object-fit: cover;
+}
+/*********************/
+.projectData .top {
+  position: relative;
+  height: 100vh;
+  overflow: hidden;
+}
+.projectData .top h2 {
+  position: absolute;
+  font-size: 2.5rem;
+  left: 100px;
+  /* top: 50%; */
+  /* transform: translateY(-50%); */
+  bottom: 300px;
+  z-index: 9;
+  color: white;
+}
+.projectData .top img {
+  height: 100%;
+  width: 100%;
+  filter: brightness(75%);
+}
+/********************/
+.projectData .top .left {
+  width: 50vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.projectData .top .left h2 {
+  font-size: 2.5rem;
+}
+.projectData .top .right {
+  width: 50vw;
+}
+.projectData .top .right img {
+  width: 100%;
+  height: 100%;
+}
+
+.projectData .explain {
+  display: flex;
+}
+
+.projectData .explain .left {
+  justify-content: center;
+  align-items: center;
+}
+
+.frame {
+  box-shadow: 0 0 5px 2px rgba(0, 0, 0, 0.25);
+  padding: 40px;
+}
+.frame img {
+  width: 100%;
+}
+.frame .shadow {
+  padding: 2px 2px 0px 2px;
+  box-shadow: inset 0px 0px 10px 3px rgba(0, 0, 0, 0.25);
+}
+.projectData .explain .right {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.projectData .explain .right .text {
+  width: 80%;
+}
+.projectData p {
+  line-height: 1.8;
+}
+
+.projectData .concept {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.projectData .concept p {
+  width: 50%;
+}
+
+.projectData .moreImages {
+  display: flex;
+  justify-content: space-between;
+}
+.projectData .moreImages .left,
+.projectData .moreImages .right {
+  width: 45%;
+}
+
+.projectData .moreImages .right .frame {
+  margin-top: 3rem;
+}
+
+.projectData .how {
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  gap: 3rem;
+}
+
+.projectData h2 {
+  font-size: 3.2rem;
+}
+
+.projectData .diagram {
+  display: flex;
+  justify-content: space-between;
+}
+.projectData .diagram.align {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  align-items: center;
+  justify-content: unset;
+}
+
+.projectData .diagram.align .left,
+.projectData .diagram.align .right {
+  width: 55%;
+}
+
+.projectData .diagram.exHallAlign {
+  justify-content: center;
+}
+
+.projectData .diagram.exHallAlign .right {
+  display: none;
+}
+.projectData .diagram.exHallAlign .left {
+  width: 50%;
+}
+
+.projectData .diagram .right .foodImg {
+  object-fit: contain;
+}
+.projectData .diagram .left,
+.projectData .diagram .right {
+  width: 45%;
+}
+
+.projectData .diagram .left img {
+  object-fit: unset;
+}
+.projectData .diagram .left img,
+.projectData .diagram .right img {
+  width: 100%;
+  height: 100%;
+}
+.projectData .plans,
+.projectData .elevations {
+  display: flex;
+  flex-direction: column;
+  gap: 3rem;
+  text-align: center;
+}
+.projectData .elevations.none {
+  display: none;
+}
+.projectData h3 {
+  font-size: 2.3rem;
+}
+.projectData .plans .topImage img,
+.projectData .plans .bottomImage img {
+  width: 100%;
+}
+
+.projectData .elevations .elev img {
+  width: 100%;
+}
+.projectData footer {
+  padding: 2rem 2rem 0 2rem;
+}
+.projectData footer .content {
+  display: flex;
+  text-align: center;
+  flex-direction: column;
+  align-items: center;
+  gap: 3rem;
+  margin-bottom: 3rem;
+}
+
+.projectData footer .content .icons {
+  width: 15%;
+}
+
+@media (max-width: 843px) {
+  .projectData .top h2 {
+    font-size: 1.8rem;
+    left: 36px;
+  }
+  .projectData .diagram.align .left,
+  .projectData .diagram.align .right {
+    width: 100%;
+  }
+  /* .projectData .top {
+    align-items: center;
+    height: unset;
+    flex-direction: column-reverse;
+  }
+  .projectData .top .left {
+    height: 35vh;
+    width: unset;
+  }
+  .projectData .top .right {
+    height: 61vh;
+    width: unset;
+  } */
+  .projectData .pad {
+    padding: 0 1rem;
+  }
+  .projectData .explain {
+    flex-direction: column;
+    gap: 3rem;
+  }
+  .frame {
+    padding: 20px;
+  }
+  .projectData .explain .right .text {
+    width: unset;
+    text-align: center;
+  }
+  .projectData .concept p {
+    width: unset;
+  }
+  .projectData .moreImages {
+    flex-direction: column;
+  }
+  .projectData h2 {
+    font-size: 2rem;
+  }
+  .projectData .plans h3 {
+    font-size: 1.7rem;
+  }
+  .projectData footer .content .icons {
+    width: 45%;
+  }
+  .projectData .moreImages .left,
+  .projectData .moreImages .right {
+    width: unset;
+  }
+}
