@@ -1,0 +1,105 @@
+footer {
+  background-color: var(--dark-brown);
+  text-align: center;
+  margin-top: 5rem;
+}
+.footerContent {
+  padding: 70px 120px 120px 70px;
+  color: #fff;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+footer h4 {
+  color: #fff;
+  font-size: 40px;
+}
+
+footer p {
+  font-size: 28px;
+  color: #fff;
+}
+
+footer .left,
+footer .right {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  align-items: center;
+  height: 150px;
+}
+
+.icons {
+  display: flex;
+  justify-content: space-between;
+  width: 36%;
+}
+
+.icons a svg {
+  font-size: 40px;
+  transition: all 0.2s linear;
+  fill: #fff;
+  transform: scale(1.6);
+}
+
+.copy {
+  font-size: 17px;
+  font-weight: lighter;
+  color: #ffffffb0;
+}
+
+.copy a {
+  color: #ffffffb0;
+  font-weight: 700;
+  transition: all 0.3s linear;
+  text-decoration: underline;
+}
+
+.copy a:hover {
+  color: #fff;
+}
+
+.icons a:first-child:hover svg {
+  fill: #4267b2;
+}
+.icons a:nth-child(2):hover svg {
+  fill: #0072b1;
+}
+.icons a:last-child:hover svg {
+  fill: #25d366;
+}
+
+@media (max-width: 768px) {
+  .footerContent {
+    flex-direction: column-reverse;
+    justify-content: unset;
+    padding: 70px 30px;
+    row-gap: 50px;
+  }
+  .footerContent h4 {
+    font-size: 30px;
+  }
+
+  footer p {
+    font-size: 20px;
+  }
+  .icons {
+    width: 35%;
+  }
+  .copy {
+    font-size: 14px;
+  }
+}
+
+@media (min-width: 759px) and (max-width: 992px) {
+  .footerContent {
+    padding: 70px 51px 120px 70px;
+  }
+  footer h4 {
+    font-size: 30px;
+  }
+  footer p {
+    font-size: 20px;
+  }
+}
